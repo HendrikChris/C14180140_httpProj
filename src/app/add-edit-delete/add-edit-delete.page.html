@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-button slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-button>
+    <ion-title>Edit</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item><ion-input type="text" [(ngModel)]="id" placeholder="Email"></ion-input></ion-item>
+  <ion-item><ion-input type="text" [(ngModel)]="post.email" placeholder="Email"></ion-input></ion-item>
+  <ion-item><ion-input type="text" [(ngModel)]="post.first_name" placeholder="First Name"></ion-input></ion-item>
+  <ion-item><ion-input type="text" [(ngModel)]="post.last_name" placeholder="Last Name"></ion-input></ion-item>
+  <ion-button (click)="Add()" >Add</ion-button>
+  <ion-button (click)="Edit()" >Edit</ion-button>
+  <ion-button (click)="Delete()" >Delete</ion-button>
+</ion-content>
